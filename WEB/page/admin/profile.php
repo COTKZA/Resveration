@@ -8,8 +8,8 @@
         exit();
     }
 
-    // ตรวจสอบว่า user มี role ถูกต้องหรือไม่
-    if ($_SESSION['role'] !== 'user') {
+    // ตรวจสอบว่า admin มี role ถูกต้องหรือไม่
+    if ($_SESSION['role'] !== 'admin') {
         echo json_encode(['status' => 'error', 'message' => 'Access denied']);
         exit();
     }
