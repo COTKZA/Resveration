@@ -1,0 +1,186 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./../img/PIM.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95); /* White background with slight transparency */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Softer shadow for smooth effect */
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    box-sizing: border-box;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Small lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+h2:hover {
+    color: #4CAF50; /* Change heading color on hover */
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Adjust width to fit padding */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft inner shadow */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth input interaction */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15); /* Enhance shadow on focus */
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth button interaction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+input[type="submit"]:active {
+    transform: translateY(2px); /* Button presses down slightly */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow on active */
+}
+
+div {
+    margin-top: 20px;
+    text-align: center; /* Center align links */
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth link hover effect */
+}
+
+a:hover {
+    color: #388E3C;
+    text-decoration: underline;
+}
+
+.forgot-password {
+    color: #FF5252;
+}
+
+.forgot-password:hover {
+    color: #D32F2F;
+}
+
+.register {
+    color: #2E7D32;
+}
+
+.register:hover {
+    color: #1B5E20;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    animation: fadeIn 0.5s; /* Smooth fade-in */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: scaleUp 0.3s ease; /* Smooth modal scale-up animation */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+@media screen {
+    
+}
