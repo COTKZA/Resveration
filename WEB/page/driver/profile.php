@@ -8,7 +8,7 @@
         exit();
     }
 
-    // ตรวจสอบว่า user มี role ถูกต้องหรือไม่
+    // ตรวจสอบว่า driver มี role ถูกต้องหรือไม่
     if ($_SESSION['role'] !== 'driver') {
         echo json_encode(['status' => 'error', 'message' => 'Access denied']);
         exit();
